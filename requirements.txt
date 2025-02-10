@@ -4,3 +4,5 @@ requests
 fastapi
 uvicorn
 gradio
+
+ollama
