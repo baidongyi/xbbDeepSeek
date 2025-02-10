@@ -1,9 +1,9 @@
 import ollama
 
 
-def chat_with_ollama(prompt:str):
+def chat_with_ollama(my_prompt:str):
     response = ollama.chat(model='deepseek-r1:8b',  # 选择模型
-                           messages=[{'role': 'user', 'content': prompt}])
+                           messages=[{'role': 'user', 'content': my_prompt}])
     result = response['message']['content']
     return result
 

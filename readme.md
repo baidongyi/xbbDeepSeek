@@ -51,6 +51,24 @@
 ![本地模型展示](images/ollama_list.png)
 
 
+### 3.2 使用命令行模式跟deepseek对话
+
+`ollama run deepseek-r1:8b`
+
+![本地运行deepseek命令行](images/run_dp_cmd.png)
+
+### 3.3 在python调用ollama服务
+
+直接安装安装 ollama 的包
+`pip install ollama`
+
+然后在代码里调用
+
+
+
+
+### 3.3 启动ollma本地API服务
+
 Ollama自带本地服务的API，使用以下命令启动这个API服务
 
 `ollama serve`
@@ -65,19 +83,23 @@ Ollama自带本地服务的API，使用以下命令启动这个API服务
 
 `pip install -r ./requirements.txt`
 
+![python里调用ollama](images/py_chat_ollama.png)
+
+
+### 3.3 启动ollama本地服务
+
 ![验证ollama服务](images/test_ollama_api.png)
 
-### 3.3 使用python把这个服务以API形式提供出来
+### 3.4 使用python把这个服务以API形式提供出来
 这个形式我参考了chatGLM API的脚本
 
 ![运行我的API服务](images/run_my_api.png)
 
-### 3.4 验证测试我提供的API服务
+### 3.5 验证测试我提供的API服务
 
 ![验证我的API服务](images/run_result.png)
 
-### 3.5 使用Gradio构建图形用户界面
-
+### 3.6 使用Gradio构建图形用户界面
 
 运行我的例子:
 
