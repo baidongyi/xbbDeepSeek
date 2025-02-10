@@ -16,17 +16,29 @@
 
 #### 3.0.1 安装ollama
 
+网络环境支持的，可以在官方下载ollama客户端
+
+[ollma官方下载地址](https://ollama.com/download/windows)
+
+如果网络受限的，可以在我的百度盘下载(windows版本)
+
+[百度网盘下载地址](https://pan.baidu.com/s/1ZLGPGhywIM10Eu93wclH_w?pwd=b3h4)
+
 ![安装ollma](images/install_ollama.png)
 
 ### 3.0.2 下载或者复制本地模型文件
 
-复制模型文件到 C:/User/用户名/ 下
+复制模型文件到 C:/User/当前用户名/ 下
+
+通过百度网盘下载
+[百度网盘下载地址](https://pan.baidu.com/s/1SxvCtL_B8zJYdg-nCqYccA?pwd=u65e)
 
 ![复制模型](images/save_ollama.png)
 
 ### 3.1 启动ollama本地服务 ###
 
 确认本地模型已经安装好
+
 `ollama list`
 
 ![本地模型展示](images/ollama_list.png)
