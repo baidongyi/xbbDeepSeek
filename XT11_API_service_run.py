@@ -17,7 +17,7 @@ def restart():
 
 app = FastAPI()
 
-# 允许所有域名访问（开发阶段）
+# 允许所有域名访问
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
