@@ -8,6 +8,7 @@ from XT01_test_local_ollama_service import chat_with_local_deep_seek
 import sys
 import os
 
+from fastapi.middleware.cors import CORSMiddleware
 
 
 def restart():
@@ -15,6 +16,15 @@ def restart():
     os.execl(python, python, *sys.argv)
 
 app = FastAPI()
+
+# 允许所有域名访问（开发阶段）
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers={"*"},
+)
 
 
 @app.post("/")
